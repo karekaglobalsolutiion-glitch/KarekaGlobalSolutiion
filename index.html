@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -47,659 +46,659 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-kareka-700 selection:text-white">
 
-<!-- Notification Toast -->
-<div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 bg-emerald-900 text-white px-6 py-3.5 rounded-2xl shadow-2xl flex items-center space-x-3 border border-emerald-700">
-    <i class="fa-solid fa-circle-check text-emerald-400 text-xl"></i>
-    <div>
-        <h4 class="font-bold text-sm">Berhasil Terkirim!</h4>
-        <p id="toast-message" class="text-xs text-slate-200">Pesan Anda telah diteruskan ke tim Kareka.</p>
-    </div>
-</div>
-
-<!-- Top Announcement / Contact Bar -->
-<div class="bg-kareka-950 text-slate-300 text-xs py-2.5 px-4 sm:px-12 border-b border-emerald-900/40">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-        <div class="flex items-center space-x-6">
-            <a href="tel:+6289684231379" class="flex items-center gap-2 hover:text-white transition"><i class="fa-solid fa-phone text-emerald-400"></i> +62 896-8423-1379</a>
-            <a href="mailto:karekaglobalsolutiion@gmail.com" class="flex items-center gap-2 hover:text-white transition"><i class="fa-solid fa-envelope text-emerald-400"></i> karekaglobalsolutiion@gmail.com</a>
+    <!-- Notification Toast -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 bg-emerald-900 text-white px-6 py-3.5 rounded-2xl shadow-2xl flex items-center space-x-3 border border-emerald-700">
+        <i class="fa-solid fa-circle-check text-emerald-400 text-xl"></i>
+        <div>
+            <h4 class="font-bold text-sm">Berhasil Terkirim!</h4>
+            <p id="toast-message" class="text-xs text-slate-200">Pesan Anda telah diteruskan ke tim Kareka.</p>
         </div>
-        <div class="flex items-center space-x-4">
-            <span class="hidden md:inline text-emerald-400 font-medium">Spesialis Desain Interior & Periklanan</span>
-            <div class="flex space-x-3">
-                <a href="#" class="hover:text-emerald-400 transition"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="hover:text-emerald-400 transition"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="hover:text-emerald-400 transition"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#" class="hover:text-emerald-400 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+
+    <!-- Top Announcement / Contact Bar -->
+    <div class="bg-kareka-950 text-slate-300 text-xs py-2.5 px-4 sm:px-12 border-b border-emerald-900/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-6">
+                <a href="tel:+6289684231379" class="flex items-center gap-2 hover:text-white transition"><i class="fa-solid fa-phone text-emerald-400"></i> +62 896-8423-1379</a>
+                <a href="mailto:karekaglobalsolutiion@gmail.com" class="flex items-center gap-2 hover:text-white transition"><i class="fa-solid fa-envelope text-emerald-400"></i> karekaglobalsolutiion@gmail.com</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="hidden md:inline text-emerald-400 font-medium">Spesialis Desain Interior & Periklanan</span>
+                <div class="flex space-x-3">
+                    <a href="#" class="hover:text-emerald-400 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-emerald-400 transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-emerald-400 transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" class="hover:text-emerald-400 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Navbar -->
-<nav id="navbar" class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300 border-b border-slate-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-12 py-3.5 flex justify-between items-center">
-        <!-- Logo Perusahaan -->
-        <a href="#beranda" class="flex items-center gap-3 group">
-            <img src="Gemini_Generated_Image_6a0uys6a0uys6a0u.jpeg" alt="Logo Kareka Global Solutiion" class="h-11 sm:h-13 w-auto object-contain group-hover:scale-105 transition">
-        </a>
+    <!-- Navbar -->
+    <nav id="navbar" class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-12 py-3.5 flex justify-between items-center">
+            <!-- Logo Perusahaan -->
+            <a href="#beranda" class="flex items-center gap-3 group">
+                <img src="Gemini_Generated_Image_6a0uys6a0uys6a0u.jpeg" alt="Logo Kareka Global Solutiion" class="h-11 sm:h-13 w-auto object-contain group-hover:scale-105 transition">
+            </a>
 
-        <!-- Desktop Navigation Links -->
-        <div class="hidden lg:flex items-center space-x-8 font-medium text-sm text-slate-600">
-            <a href="#beranda" class="hover:text-kareka-700 transition font-semibold text-kareka-700">Beranda</a>
-            <a href="#tentang" class="hover:text-kareka-700 transition">Tentang Kami</a>
-            <a href="#layanan" class="hover:text-kareka-700 transition">Layanan</a>
-            <a href="#portofolio" class="hover:text-kareka-700 transition">Portofolio</a>
-            <a href="#testimoni" class="hover:text-kareka-700 transition">Testimoni</a>
-            <a href="#kontak" class="bg-kareka-700 hover:bg-kareka-800 text-white px-5 py-2.5 rounded-xl shadow-md transition transform hover:-translate-y-0.5">Hubungi Kami</a>
+            <!-- Desktop Navigation Links -->
+            <div class="hidden lg:flex items-center space-x-8 font-medium text-sm text-slate-600">
+                <a href="#beranda" class="hover:text-kareka-700 transition font-semibold text-kareka-700">Beranda</a>
+                <a href="#tentang" class="hover:text-kareka-700 transition">Tentang Kami</a>
+                <a href="#layanan" class="hover:text-kareka-700 transition">Layanan</a>
+                <a href="#portofolio" class="hover:text-kareka-700 transition">Portofolio</a>
+                <a href="#testimoni" class="hover:text-kareka-700 transition">Testimoni</a>
+                <a href="#kontak" class="bg-kareka-700 hover:bg-kareka-800 text-white px-5 py-2.5 rounded-xl shadow-md transition transform hover:-translate-y-0.5">Hubungi Kami</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="lg:hidden text-slate-700 hover:text-kareka-700 focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
         </div>
 
-        <!-- Mobile Menu Toggle -->
-        <button id="menu-btn" class="lg:hidden text-slate-700 hover:text-kareka-700 focus:outline-none p-2">
-            <i class="fa-solid fa-bars text-2xl"></i>
-        </button>
-    </div>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-100 px-6 py-4 space-y-3 shadow-lg">
+            <a href="#beranda" class="block font-medium text-kareka-700 py-1 mobile-link">Beranda</a>
+            <a href="#tentang" class="block font-medium text-slate-600 hover:text-kareka-700 py-1 mobile-link">Tentang Kami</a>
+            <a href="#layanan" class="block font-medium text-slate-600 hover:text-kareka-700 py-1 mobile-link">Layanan</a>
+            <a href="#portofolio" class="block font-medium text-slate-600 hover:text-kareka-700 py-1 mobile-link">Portofolio</a>
+            <a href="#testimoni" class="block font-medium text-slate-600 hover:text-kareka-700 py-1 mobile-link">Testimoni</a>
+            <a href="#kontak" class="block text-center bg-kareka-700 text-white py-2.5 rounded-xl font-medium mt-2 mobile-link">Hubungi Kami</a>
+        </div>
+    </nav>
 
-    <!-- Mobile Menu Dropdown -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-100 px-6 py-4 space-y-3 shadow-lg">
-        <a href="#beranda" class="block font-medium text-kareka-700 py-1 mobile-link">Beranda</a>
-        <a href="#tentang" class="block font-medium text-slate-600 hover:text-kareka-700 py-1 mobile-link">Tentang Kami</a>
-        <a href="#layanan" class="block font-medium text-slate-600 hover:text-kareka-700 py-1 mobile-link">Layanan</a>
-        <a href="#portofolio" class="block font-medium text-slate-600 hover:text-kareka-700 py-1 mobile-link">Portofolio</a>
-        <a href="#testimoni" class="block font-medium text-slate-600 hover:text-kareka-700 py-1 mobile-link">Testimoni</a>
-        <a href="#kontak" class="block text-center bg-kareka-700 text-white py-2.5 rounded-xl font-medium mt-2 mobile-link">Hubungi Kami</a>
-    </div>
-</nav>
+    <!-- Hero Section -->
+    <header id="beranda" class="hero-pattern text-white py-32 sm:py-48 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-12 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="mb-6 bg-white/95 backdrop-blur-md p-4 sm:p-5 rounded-2xl shadow-2xl inline-block border border-emerald-500/30">
+                        <img src="Gemini_Generated_Image_6a0uys6a0uys6a0u.jpeg" alt="Logo Kareka Global Solutiion" class="h-16 sm:h-20 w-auto object-contain">
+                    </div>
+                    
+                    <div class="inline-flex items-center gap-2 bg-emerald-800/80 backdrop-blur-md px-4 py-1.5 rounded-full text-emerald-200 text-xs font-semibold mb-6 border border-emerald-600/50">
+                        <i class="fa-solid fa-award"></i> Mitra Profesional Interior & Periklanan Terpercaya
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                        Mewujudkan Estetika Ruang & <span class="text-emerald-400">Branding Bisnis Kelas Atas</span>
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-slate-200 mb-8 leading-relaxed font-light">
+                        Kareka Global Solutiion menghadirkan layanan terpadu dalam desain interior eksklusif serta konstruksi media advertising berkualitas tinggi untuk memperkuat identitas serta visibilitas perusahaan Anda.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#layanan" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-lg transition transform hover:-translate-y-1 text-center flex items-center justify-center gap-3">
+                            <span>Jelajahi Layanan Kami</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="https://wa.me/6289684231379?text=Halo%20PT%20Kareka%20Global%20Solutiion,%20saya%20ingin%20berkonsultasi%20mengenai%20proyek." target="_blank" class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold px-8 py-4 rounded-xl transition text-center flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-xl"></i>
+                            <span>Konsultasi WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
 
-<!-- Hero Section -->
-<header id="beranda" class="hero-pattern text-white py-32 sm:py-48 relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-12 relative z-10">
+                <!-- Hero Interactive Quick Estimator Card -->
+                <div class="lg:col-span-5" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="bg-white/10 backdrop-blur-xl border border-white/20 p-6 sm:p-8 rounded-3xl shadow-2xl text-white">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center text-slate-950 font-bold">
+                                <i class="fa-solid fa-calculator"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg">Estimasi Cepat Proyek</h3>
+                                <p class="text-xs text-slate-300">Simulasi instan kebutuhan Anda</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-emerald-300 uppercase mb-1">Pilih Kategori</label>
+                                <select id="est-category" class="w-full bg-slate-900/80 border border-emerald-600/40 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-400">
+                                    <option value="interior">Interior Design & Build</option>
+                                    <option value="advertising">Advertising & Outdoor Media</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-emerald-300 uppercase mb-1">Skala / Volume (m² atau Titik)</label>
+                                <input type="number" id="est-volume" value="50" min="5" class="w-full bg-slate-900/80 border border-emerald-600/40 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-400">
+                            </div>
+                            <div class="bg-emerald-950/60 p-4 rounded-2xl border border-emerald-700/40 flex justify-between items-center">
+                                <div>
+                                    <span class="text-xs text-emerald-300 block">Kisaran Estimasi Biaya</span>
+                                    <span id="est-result" class="text-xl font-black text-white">Rp 15.000.000 - Rp 25.000.000</span>
+                                </div>
+                                <i class="fa-solid fa-circle-info text-emerald-400 text-xl"></i>
+                            </div>
+                            <button onclick="calculateEstimate()" class="w-full bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-3.5 rounded-xl transition shadow-lg">
+                                Hitung Estimasi Sekarang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-slate-50 to-transparent"></div>
+    </header>
+
+    <!-- Tentang Kami Section -->
+    <section id="tentang" class="py-24 max-w-7xl mx-auto px-4 sm:px-12">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-7" data-aos="fade-right" data-aos-duration="1000">
-                <div class="mb-6 bg-white/95 backdrop-blur-md p-4 sm:p-5 rounded-2xl shadow-2xl inline-block border border-emerald-500/30">
-                    <img src="Gemini_Generated_Image_6a0uys6a0uys6a0u.jpeg" alt="Logo Kareka Global Solutiion" class="h-16 sm:h-20 w-auto object-contain">
+            <div class="lg:col-span-6 relative" data-aos="fade-right">
+                <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Tentang Kareka" class="w-full h-auto object-cover">
                 </div>
-                
-                <div class="inline-flex items-center gap-2 bg-emerald-800/80 backdrop-blur-md px-4 py-1.5 rounded-full text-emerald-200 text-xs font-semibold mb-6 border border-emerald-600/50">
-                    <i class="fa-solid fa-award"></i> Mitra Profesional Interior & Periklanan Terpercaya
+                <div class="absolute -bottom-6 -right-6 bg-kareka-900 text-white p-6 rounded-3xl shadow-xl hidden sm:block border border-emerald-700/40">
+                    <p class="text-3xl font-black text-emerald-400">100%</p>
+                    <p class="text-xs text-slate-200 mt-1">Komitmen Kualitas & Presisi</p>
                 </div>
-                
-                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight mb-6">
-                    Mewujudkan Estetika Ruang & <span class="text-emerald-400">Branding Bisnis Kelas Atas</span>
-                </h1>
-                
-                <p class="text-lg sm:text-xl text-slate-200 mb-8 leading-relaxed font-light">
-                    Kareka Global Solutiion menghadirkan layanan terpadu dalam desain interior eksklusif serta konstruksi media advertising berkualitas tinggi untuk memperkuat identitas serta visibilitas perusahaan Anda.
+            </div>
+
+            <div class="lg:col-span-6" data-aos="fade-left">
+                <span class="text-kareka-700 font-bold uppercase tracking-wider text-xs bg-emerald-100 px-3.5 py-1.5 rounded-full">Tentang Perusahaan</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-4 mb-6">
+                    Solusi Terpadu Ruang & Media Iklan Profesional
+                </h2>
+                <p class="text-slate-600 mb-6 leading-relaxed">
+                    Kareka Global Solutiion hadir sebagai jawaban atas kebutuhan dunia usaha dan hunian modern yang mengutamakan estetika serta fungsionalitas. Kami memadukan keahlian teknik sipil dan interior dengan kreativitas promosi visual yang berdampak tinggi.
                 </p>
                 
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#layanan" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-lg transition transform hover:-translate-y-1 text-center flex items-center justify-center gap-3">
-                        <span>Jelajahi Layanan Kami</span>
-                        <i class="fa-solid fa-arrow-right"></i>
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-emerald-100 text-kareka-800 p-3 rounded-xl mt-1">
+                            <i class="fa-solid fa-eye text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Visi Utama</h4>
+                            <p class="text-sm text-slate-600">Menjadi perusahaan penyedia solusi interior dan advertising terdepan yang diandalkan di seluruh wilayah Indonesia.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="bg-emerald-100 text-kareka-800 p-3 rounded-xl mt-1">
+                            <i class="fa-solid fa-bullseye text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Misi Perusahaan</h4>
+                            <p class="text-sm text-slate-600">Memberikan hasil karya bermutu tinggi, ketepatan waktu pengerjaan, serta pelayanan konsultasi profesional bagi setiap klien.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#kontak" class="inline-flex items-center gap-2 bg-kareka-800 hover:bg-kareka-900 text-white font-semibold px-7 py-3.5 rounded-xl shadow-lg transition">
+                    <span>Diskusikan Proyek Anda</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Section -->
+    <section id="layanan" class="py-24 bg-slate-100/70 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-12">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-kareka-700 font-bold uppercase tracking-wider text-xs bg-emerald-100 px-3.5 py-1.5 rounded-full">Layanan Profesional</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-4 mb-4">Dua Pilar Keahlian Utama Kami</h2>
+                <p class="text-slate-600">Komitmen penuh dalam memberikan hasil terbaik untuk estetika interior dan eksposur brand melalui advertising.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                
+                <!-- Pillar 1: Interior -->
+                <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-xl border border-slate-200 hover:border-kareka-600 transition duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <div class="w-16 h-16 bg-kareka-900 text-emerald-400 rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-lg">
+                            <i class="fa-solid fa-couch"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 mb-3">Interior Design & Build</h3>
+                        <p class="text-slate-600 mb-6 text-sm leading-relaxed">
+                            Menciptakan suasana ruang kerja, kantor, apartemen, atau hunian yang nyaman, elegan, dan memaksimalkan setiap meter persegi ruangan Anda.
+                        </p>
+                        
+                        <ul class="space-y-3.5 mb-8 text-sm text-slate-700">
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Desain 3D Rendering & Tata Ruang Profesional</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Pembuatan Kitchen Set Custom Berkualitas Tinggi</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Partisi Ruangan, Backdrop TV, & Wall Panel</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Renovasi Komprehensif Kantor & Komersial</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Pemasangan Plafon Gypsum & Vinyl Flooring</li>
+                        </ul>
+                    </div>
+                    <a href="#kontak" class="block text-center bg-slate-100 hover:bg-kareka-700 hover:text-white text-slate-800 font-bold py-3.5 rounded-xl transition">
+                        Pesan Layanan Interior
                     </a>
-                    <a href="https://wa.me/6289684231379?text=Halo%20PT%20Kareka%20Global%20Solutiion,%20saya%20ingin%20berkonsultasi%20mengenai%20proyek." target="_blank" class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold px-8 py-4 rounded-xl transition text-center flex items-center justify-center gap-3">
-                        <i class="fa-brands fa-whatsapp text-emerald-400 text-xl"></i>
-                        <span>Konsultasi WhatsApp</span>
+                </div>
+
+                <!-- Pillar 2: Advertising -->
+                <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-xl border border-slate-200 hover:border-kareka-600 transition duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <div class="w-16 h-16 bg-kareka-900 text-emerald-400 rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-lg">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 mb-3">Advertising & Branding Solutiion</h3>
+                        <p class="text-slate-600 mb-6 text-sm leading-relaxed">
+                            Tingkatkan visibilitas dan daya tarik merek Anda di hadapan publik dengan media promosi luar ruang maupun dalam ruang yang memukau.
+                        </p>
+                        
+                        <ul class="space-y-3.5 mb-8 text-sm text-slate-700">
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Pembangunan & Konstruksi Billboard / Baliho</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Pembuatan Neon Box & LED Display Terang</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Huruf Timbul / Letter Sign (Akrilik & Stainless)</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Papan Nama Toko, Neon Flex, & Branding Usaha</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Car Wrapping & Fleet Branding Profesional</li>
+                        </ul>
+                    </div>
+                    <a href="#kontak" class="block text-center bg-slate-100 hover:bg-kareka-700 hover:text-white text-slate-800 font-bold py-3.5 rounded-xl transition">
+                        Pesan Layanan Advertising
                     </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portofolio / Galeri Section -->
+    <section id="portofolio" class="py-24 max-w-7xl mx-auto px-4 sm:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-12" data-aos="fade-up">
+            <span class="text-kareka-700 font-bold uppercase tracking-wider text-xs bg-emerald-100 px-3.5 py-1.5 rounded-full">Galeri Karya</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-4 mb-4">Portofolio Proyek Unggulan</h2>
+            <p class="text-slate-600">Bukti nyata dedikasi dan kualitas kerja kami dalam bidang interior dan periklanan.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex justify-center flex-wrap gap-3 mb-12" data-aos="fade-up">
+            <button onclick="filterPortfolio('all')" class="portfolio-filter-btn active bg-kareka-700 text-white px-7 py-2.5 rounded-full font-semibold text-sm shadow-md transition">Semua Karya</button>
+            <button onclick="filterPortfolio('interior')" class="portfolio-filter-btn bg-slate-200 text-slate-700 px-7 py-2.5 rounded-full font-semibold text-sm hover:bg-slate-300 transition">Interior</button>
+            <button onclick="filterPortfolio('advertising')" class="portfolio-filter-btn bg-slate-200 text-slate-700 px-7 py-2.5 rounded-full font-semibold text-sm hover:bg-slate-300 transition">Advertising</button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-container">
+            
+            <!-- Item 1 -->
+            <div class="portfolio-item interior group relative rounded-2xl overflow-hidden shadow-lg bg-white border border-slate-100" data-aos="zoom-in">
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80" alt="Interior Kantor Modern" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-1">Desain Interior</span>
+                    <h4 class="text-white text-lg font-bold">Kantor Eksekutif PT Solusi Digital</h4>
+                    <p class="text-slate-300 text-xs mt-1">Renovasi tata ruang & partisi kaca minimalis modern.</p>
                 </div>
             </div>
 
-            <!-- Hero Interactive Quick Estimator Card -->
-            <div class="lg:col-span-5" data-aos="fade-left" data-aos-duration="1000">
-                <div class="bg-white/10 backdrop-blur-xl border border-white/20 p-6 sm:p-8 rounded-3xl shadow-2xl text-white">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center text-slate-950 font-bold">
-                            <i class="fa-solid fa-calculator"></i>
+            <!-- Item 2 -->
+            <div class="portfolio-item advertising group relative rounded-2xl overflow-hidden shadow-lg bg-white border border-slate-100" data-aos="zoom-in" data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&w=600&q=80" alt="Billboard Kota" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-1">Advertising</span>
+                    <h4 class="text-white text-lg font-bold">Billboard Strategis Titik Utama</h4>
+                    <p class="text-slate-300 text-xs mt-1">Konstruksi baja kokoh dengan sorot LED otomatis.</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="portfolio-item interior group relative rounded-2xl overflow-hidden shadow-lg bg-white border border-slate-100" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80" alt="Kitchen Set Mewah" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-1">Desain Interior</span>
+                    <h4 class="text-white text-lg font-bold">Kitchen Set Apartemen Premium</h4>
+                    <p class="text-slate-300 text-xs mt-1">Custom HPL mewah dengan island table multifungsi.</p>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="portfolio-item advertising group relative rounded-2xl overflow-hidden shadow-lg bg-white border border-slate-100" data-aos="zoom-in" data-aos-delay="300">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Neon Box Toko" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-1">Advertising</span>
+                    <h4 class="text-white text-lg font-bold">Neon Box & Letter Sign Akrilik</h4>
+                    <p class="text-slate-300 text-xs mt-1">Pencahayaan merata terang mencolok di malam hari.</p>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="portfolio-item interior group relative rounded-2xl overflow-hidden shadow-lg bg-white border border-slate-100" data-aos="zoom-in" data-aos-delay="400">
+                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80" alt="Living Room" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-1">Desain Interior</span>
+                    <h4 class="text-white text-lg font-bold">Living Room Hunian Eksklusif</h4>
+                    <p class="text-slate-300 text-xs mt-1">Sentuhan aksen kayu alami dengan warm lighting.</p>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="portfolio-item advertising group relative rounded-2xl overflow-hidden shadow-lg bg-white border border-slate-100" data-aos="zoom-in" data-aos-delay="500">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80" alt="Branding Kendaraan" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                    <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-1">Advertising</span>
+                    <h4 class="text-white text-lg font-bold">Car Wrapping & Fleet Branding</h4>
+                    <p class="text-slate-300 text-xs mt-1">Stiker vinyl khusus tahan terhadap cuaca ekstrem.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimoni Klien Section -->
+    <section id="testimoni" class="py-24 bg-slate-100/70 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-12">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-kareka-700 font-bold uppercase tracking-wider text-xs bg-emerald-100 px-3.5 py-1.5 rounded-full">Testimoni Klien</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-4 mb-4">Apa Kata Mereka Tentang Kami?</h2>
+                <p class="text-slate-600">Kepuasan dan kepercayaan klien adalah tolok utama keberhasilan karya kami.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <div class="text-amber-400 flex space-x-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm italic mb-6 leading-relaxed">
+                            "Pengerjaan interior kantor kami sangat rapi dan selesai tepat waktu. Tim Kareka Global Solutiion sangat komunikatif dan solutif memberikan saran desain."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-100">
+                        <div class="w-12 h-12 bg-kareka-700 text-white rounded-full flex items-center justify-center font-bold text-base shadow">
+                            BS
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">Estimasi Cepat Proyek</h3>
-                            <p class="text-xs text-slate-300">Simulasi instan kebutuhan Anda</p>
+                            <h4 class="font-bold text-slate-900 text-sm">Bpk. Budi Santoso</h4>
+                            <p class="text-xs text-slate-500">Direktur Utama PT Maju Jaya</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <div class="text-amber-400 flex space-x-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm italic mb-6 leading-relaxed">
+                            "Pesanan neon box dan huruf timbul untuk cabang toko baru kami hasilnya sangat terang dan berkelas. Pelanggan banyak yang memuji tampilannya!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-100">
+                        <div class="w-12 h-12 bg-kareka-700 text-white rounded-full flex items-center justify-center font-bold text-base shadow">
+                            SL
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Ibu Siska Lestari</h4>
+                            <p class="text-xs text-slate-500">Owner Cafe & Resto Komersial</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                    <div>
+                        <div class="text-amber-400 flex space-x-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm italic mb-6 leading-relaxed">
+                            "Kitchen set rumah pribadi saya dikerjakan dengan sangat presisi. Material HPL berkualitas tinggi dan pengerjaannya bersih tanpa cela."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-100">
+                        <div class="w-12 h-12 bg-kareka-700 text-white rounded-full flex items-center justify-center font-bold text-base shadow">
+                            RH
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Bpk. Rahmat Hidayat</h4>
+                            <p class="text-xs text-slate-500">Pemilik Hunian Eksklusif</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak & Lokasi Section -->
+    <section id="kontak" class="py-24 max-w-7xl mx-auto px-4 sm:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+            <!-- Contact Info -->
+            <div data-aos="fade-right">
+                <span class="text-kareka-700 font-bold uppercase tracking-wider text-xs bg-emerald-100 px-3.5 py-1.5 rounded-full">Hubungi Kami</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-4 mb-6">Mari Wujudkan Proyek Impian Anda Bersama Kami</h2>
+                <p class="text-slate-600 mb-8 leading-relaxed">
+                    Punya pertanyaan atau ingin berkonsultasi mengenai rencana desain interior dan pembuatan media promosi? Tim ahli kami siap melayani Anda.
+                </p>
+
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-kareka-900 text-emerald-400 p-3.5 rounded-2xl shadow">
+                            <i class="fa-solid fa-location-dot text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Alamat Kantor & Workshop</h4>
+                            <p class="text-sm text-slate-600 mt-1">Jalan Pesantren No.108 RT/RW. 005/007, Kelurahan Cibabat, Kecamatan Cimahi Utara, Kota Cimahi, 40513</p>
                         </div>
                     </div>
 
-                    <div class="space-y-4">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-kareka-900 text-emerald-400 p-3.5 rounded-2xl shadow">
+                            <i class="fa-solid fa-phone-volume text-xl"></i>
+                        </div>
                         <div>
-                            <label class="block text-xs font-semibold text-emerald-300 uppercase mb-1">Pilih Kategori</label>
-                            <select id="est-category" class="w-full bg-slate-900/80 border border-emerald-600/40 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-400">
-                                <option value="interior">Interior Design & Build</option>
-                                <option value="advertising">Advertising & Outdoor Media</option>
+                            <h4 class="font-bold text-slate-900">WhatsApp</h4>
+                            <p class="text-sm text-slate-600 mt-1">+62 896-8423-1379</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="bg-kareka-900 text-emerald-400 p-3.5 rounded-2xl shadow">
+                            <i class="fa-solid fa-envelope-open-text text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Email Resmi</h4>
+                            <p class="text-sm text-slate-600 mt-1">karekaglobalsolutiion@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="bg-kareka-900 text-emerald-400 p-3.5 rounded-2xl shadow">
+                            <i class="fa-solid fa-clock text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Jam Operasional</h4>
+                            <p class="text-sm text-slate-600 mt-1">Senin - Sabtu: 08.00 - 17.00 WIB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-white p-8 sm:p-10 rounded-3xl shadow-xl border border-slate-200" data-aos="fade-left">
+                <h3 class="text-2xl font-black text-slate-900 mb-6">Kirim Pesan & Konsultasi</h3>
+                <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-5">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Nama Lengkap</label>
+                        <input type="text" id="name" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4.5 py-3.5 text-sm focus:outline-none focus:border-kareka-600 transition" placeholder="Masukkan nama Anda">
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Nomor WhatsApp</label>
+                            <input type="tel" id="phone" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4.5 py-3.5 text-sm focus:outline-none focus:border-kareka-600 transition" placeholder="08xxxxxxxxxx">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Pilih Layanan</label>
+                            <select id="service" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4.5 py-3.5 text-sm focus:outline-none focus:border-kareka-600 transition">
+                                <option value="Interior">Desain & Pembuatan Interior</option>
+                                <option value="Advertising">Advertising & Branding</option>
+                                <option value="Keduanya">Interior & Advertising</option>
                             </select>
                         </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-emerald-300 uppercase mb-1">Skala / Volume (m² atau Titik)</label>
-                            <input type="number" id="est-volume" value="50" min="5" class="w-full bg-slate-900/80 border border-emerald-600/40 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-400">
-                        </div>
-                        <div class="bg-emerald-950/60 p-4 rounded-2xl border border-emerald-700/40 flex justify-between items-center">
-                            <div>
-                                <span class="text-xs text-emerald-300 block">Kisaran Estimasi Biaya</span>
-                                <span id="est-result" class="text-xl font-black text-white">Rp 15.000.000 - Rp 25.000.000</span>
-                            </div>
-                            <i class="fa-solid fa-circle-info text-emerald-400 text-xl"></i>
-                        </div>
-                        <button onclick="calculateEstimate()" class="w-full bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-3.5 rounded-xl transition shadow-lg">
-                            Hitung Estimasi Sekarang
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-slate-50 to-transparent"></div>
-</header>
-
-<!-- Tentang Kami Section -->
-<section id="tentang" class="py-24 max-w-7xl mx-auto px-4 sm:px-12">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div class="lg:col-span-6 relative" data-aos="fade-right">
-            <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Tentang Kareka" class="w-full h-auto object-cover">
-            </div>
-            <div class="absolute -bottom-6 -right-6 bg-kareka-900 text-white p-6 rounded-3xl shadow-xl hidden sm:block border border-emerald-700/40">
-                <p class="text-3xl font-black text-emerald-400">100%</p>
-                <p class="text-xs text-slate-200 mt-1">Komitmen Kualitas & Presisi</p>
-            </div>
-        </div>
-
-        <div class="lg:col-span-6" data-aos="fade-left">
-            <span class="text-kareka-700 font-bold uppercase tracking-wider text-xs bg-emerald-100 px-3.5 py-1.5 rounded-full">Tentang Perusahaan</span>
-            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-4 mb-6">
-                Solusi Terpadu Ruang & Media Iklan Profesional
-            </h2>
-            <p class="text-slate-600 mb-6 leading-relaxed">
-                Kareka Global Solutiion hadir sebagai jawaban atas kebutuhan dunia usaha dan hunian modern yang mengutamakan estetika serta fungsionalitas. Kami memadukan keahlian teknik sipil dan interior dengan kreativitas promosi visual yang berdampak tinggi.
-            </p>
-            
-            <div class="space-y-4 mb-8">
-                <div class="flex items-start gap-4">
-                    <div class="bg-emerald-100 text-kareka-800 p-3 rounded-xl mt-1">
-                        <i class="fa-solid fa-eye text-lg"></i>
                     </div>
                     <div>
-                        <h4 class="font-bold text-slate-900">Visi Utama</h4>
-                        <p class="text-sm text-slate-600">Menjadi perusahaan penyedia solusi interior dan advertising terdepan yang diandalkan di seluruh wilayah Indonesia.</p>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Pesan / Detail Proyek</label>
+                        <textarea id="message" rows="4" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4.5 py-3.5 text-sm focus:outline-none focus:border-kareka-600 transition" placeholder="Jelaskan kebutuhan proyek atau ukuran ruangan Anda..."></textarea>
                     </div>
-                </div>
-                <div class="flex items-start gap-4">
-                    <div class="bg-emerald-100 text-kareka-800 p-3 rounded-xl mt-1">
-                        <i class="fa-solid fa-bullseye text-lg"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900">Misi Perusahaan</h4>
-                        <p class="text-sm text-slate-600">Memberikan hasil karya bermutu tinggi, ketepatan waktu pengerjaan, serta pelayanan konsultasi profesional bagi setiap klien.</p>
-                    </div>
-                </div>
-            </div>
-
-            <a href="#kontak" class="inline-flex items-center gap-2 bg-kareka-800 hover:bg-kareka-900 text-white font-semibold px-7 py-3.5 rounded-xl shadow-lg transition">
-                <span>Diskusikan Proyek Anda</span>
-                <i class="fa-solid fa-arrow-right text-xs"></i>
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- Layanan Section -->
-<section id="layanan" class="py-24 bg-slate-100/70 border-y border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-12">
-        <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
-            <span class="text-kareka-700 font-bold uppercase tracking-wider text-xs bg-emerald-100 px-3.5 py-1.5 rounded-full">Layanan Profesional</span>
-            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-4 mb-4">Dua Pilar Keahlian Utama Kami</h2>
-            <p class="text-slate-600">Komitmen penuh dalam memberikan hasil terbaik untuk estetika interior dan eksposur brand melalui advertising.</p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            
-            <!-- Pillar 1: Interior -->
-            <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-xl border border-slate-200 hover:border-kareka-600 transition duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
-                <div>
-                    <div class="w-16 h-16 bg-kareka-900 text-emerald-400 rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-lg">
-                        <i class="fa-solid fa-couch"></i>
-                    </div>
-                    <h3 class="text-2xl font-black text-slate-900 mb-3">Interior Design & Build</h3>
-                    <p class="text-slate-600 mb-6 text-sm leading-relaxed">
-                        Menciptakan suasana ruang kerja, kantor, apartemen, atau hunian yang nyaman, elegan, dan memaksimalkan setiap meter persegi ruangan Anda.
-                    </p>
-                    
-                    <ul class="space-y-3.5 mb-8 text-sm text-slate-700">
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Desain 3D Rendering & Tata Ruang Profesional</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Pembuatan Kitchen Set Custom Berkualitas Tinggi</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Partisi Ruangan, Backdrop TV, & Wall Panel</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Renovasi Komprehensif Kantor & Komersial</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Pemasangan Plafon Gypsum & Vinyl Flooring</li>
-                    </ul>
-                </div>
-                <a href="#kontak" class="block text-center bg-slate-100 hover:bg-kareka-700 hover:text-white text-slate-800 font-bold py-3.5 rounded-xl transition">
-                    Pesan Layanan Interior
-                </a>
-            </div>
-
-            <!-- Pillar 2: Advertising -->
-            <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-xl border border-slate-200 hover:border-kareka-600 transition duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
-                <div>
-                    <div class="w-16 h-16 bg-kareka-900 text-emerald-400 rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-lg">
-                        <i class="fa-solid fa-bullhorn"></i>
-                    </div>
-                    <h3 class="text-2xl font-black text-slate-900 mb-3">Advertising & Branding Solutiion</h3>
-                    <p class="text-slate-600 mb-6 text-sm leading-relaxed">
-                        Tingkatkan visibilitas dan daya tarik merek Anda di hadapan publik dengan media promosi luar ruang maupun dalam ruang yang memukau.
-                    </p>
-                    
-                    <ul class="space-y-3.5 mb-8 text-sm text-slate-700">
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Pembangunan & Konstruksi Billboard / Baliho</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Pembuatan Neon Box & LED Display Terang</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Huruf Timbul / Letter Sign (Akrilik & Stainless)</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Papan Nama Toko, Neon Flex, & Branding Usaha</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-kareka-600"></i> Car Wrapping & Fleet Branding Profesional</li>
-                    </ul>
-                </div>
-                <a href="#kontak" class="block text-center bg-slate-100 hover:bg-kareka-700 hover:text-white text-slate-800 font-bold py-3.5 rounded-xl transition">
-                    Pesan Layanan Advertising
-                </a>
+                    <button type="submit" class="w-full bg-kareka-700 hover:bg-kareka-800 text-white font-bold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Kirim Pesan Sekarang</span>
+                    </button>
+                </form>
             </div>
 
         </div>
-    </div>
-</section>
 
-<!-- Portofolio / Galeri Section -->
-<section id="portofolio" class="py-24 max-w-7xl mx-auto px-4 sm:px-12">
-    <div class="text-center max-w-2xl mx-auto mb-12" data-aos="fade-up">
-        <span class="text-kareka-700 font-bold uppercase tracking-wider text-xs bg-emerald-100 px-3.5 py-1.5 rounded-full">Galeri Karya</span>
-        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-4 mb-4">Portofolio Proyek Unggulan</h2>
-        <p class="text-slate-600">Bukti nyata dedikasi dan kualitas kerja kami dalam bidang interior dan periklanan.</p>
-    </div>
-
-    <!-- Filter Buttons -->
-    <div class="flex justify-center flex-wrap gap-3 mb-12" data-aos="fade-up">
-        <button onclick="filterPortfolio('all')" class="portfolio-filter-btn active bg-kareka-700 text-white px-7 py-2.5 rounded-full font-semibold text-sm shadow-md transition">Semua Karya</button>
-        <button onclick="filterPortfolio('interior')" class="portfolio-filter-btn bg-slate-200 text-slate-700 px-7 py-2.5 rounded-full font-semibold text-sm hover:bg-slate-300 transition">Interior</button>
-        <button onclick="filterPortfolio('advertising')" class="portfolio-filter-btn bg-slate-200 text-slate-700 px-7 py-2.5 rounded-full font-semibold text-sm hover:bg-slate-300 transition">Advertising</button>
-    </div>
-
-    <!-- Portfolio Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-container">
-        
-        <!-- Item 1 -->
-        <div class="portfolio-item interior group relative rounded-2xl overflow-hidden shadow-lg bg-white border border-slate-100" data-aos="zoom-in">
-            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80" alt="Interior Kantor Modern" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
-                <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-1">Desain Interior</span>
-                <h4 class="text-white text-lg font-bold">Kantor Eksekutif PT Solusi Digital</h4>
-                <p class="text-slate-300 text-xs mt-1">Renovasi tata ruang & partisi kaca minimalis modern.</p>
-            </div>
+        <!-- Google Maps Lokasi Jalan Pesantren No.108 Cimahi Utara -->
+        <div class="mt-16 rounded-3xl overflow-hidden shadow-xl border border-slate-200 h-96 relative" data-aos="fade-up">
+            <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.015792949704!2d107.5451!3d-6.8839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e424268e0e75%3A0x6fb878b277b5f543!2sJl.%20Pesantren%20No.108%2C%20Cibabat%2C%20Kec.%20Cimahi%20Utara%2C%20Kota%20Cimahi%2C%20Jawa%20Barat%2040513!5e0!3m2!1sid!2sid!4v1650000000000!5m2!1sid!2sid" allowfullscreen="" loading="lazy"></iframe>
         </div>
+    </section>
 
-        <!-- Item 2 -->
-        <div class="portfolio-item advertising group relative rounded-2xl overflow-hidden shadow-lg bg-white border border-slate-100" data-aos="zoom-in" data-aos-delay="100">
-            <img src="https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&w=600&q=80" alt="Billboard Kota" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
-                <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-1">Advertising</span>
-                <h4 class="text-white text-lg font-bold">Billboard Strategis Titik Utama</h4>
-                <p class="text-slate-300 text-xs mt-1">Konstruksi baja kokoh dengan sorot LED otomatis.</p>
-            </div>
-        </div>
-
-        <!-- Item 3 -->
-        <div class="portfolio-item interior group relative rounded-2xl overflow-hidden shadow-lg bg-white border border-slate-100" data-aos="zoom-in" data-aos-delay="200">
-            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80" alt="Kitchen Set Mewah" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
-                <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-1">Desain Interior</span>
-                <h4 class="text-white text-lg font-bold">Kitchen Set Apartemen Premium</h4>
-                <p class="text-slate-300 text-xs mt-1">Custom HPL mewah dengan island table multifungsi.</p>
-            </div>
-        </div>
-
-        <!-- Item 4 -->
-        <div class="portfolio-item advertising group relative rounded-2xl overflow-hidden shadow-lg bg-white border border-slate-100" data-aos="zoom-in" data-aos-delay="300">
-            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Neon Box Toko" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
-                <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-1">Advertising</span>
-                <h4 class="text-white text-lg font-bold">Neon Box & Letter Sign Akrilik</h4>
-                <p class="text-slate-300 text-xs mt-1">Pencahayaan merata terang mencolok di malam hari.</p>
-            </div>
-        </div>
-
-        <!-- Item 5 -->
-        <div class="portfolio-item interior group relative rounded-2xl overflow-hidden shadow-lg bg-white border border-slate-100" data-aos="zoom-in" data-aos-delay="400">
-            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80" alt="Living Room" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
-                <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-1">Desain Interior</span>
-                <h4 class="text-white text-lg font-bold">Living Room Hunian Eksklusif</h4>
-                <p class="text-slate-300 text-xs mt-1">Sentuhan aksen kayu alami dengan warm lighting.</p>
-            </div>
-        </div>
-
-        <!-- Item 6 -->
-        <div class="portfolio-item advertising group relative rounded-2xl overflow-hidden shadow-lg bg-white border border-slate-100" data-aos="zoom-in" data-aos-delay="500">
-            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80" alt="Branding Kendaraan" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
-                <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-1">Advertising</span>
-                <h4 class="text-white text-lg font-bold">Car Wrapping & Fleet Branding</h4>
-                <p class="text-slate-300 text-xs mt-1">Stiker vinyl khusus tahan terhadap cuaca ekstrem.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- Testimoni Klien Section -->
-<section id="testimoni" class="py-24 bg-slate-100/70 border-t border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-12">
-        <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
-            <span class="text-kareka-700 font-bold uppercase tracking-wider text-xs bg-emerald-100 px-3.5 py-1.5 rounded-full">Testimoni Klien</span>
-            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-4 mb-4">Apa Kata Mereka Tentang Kami?</h2>
-            <p class="text-slate-600">Kepuasan dan kepercayaan klien adalah tolok utama keberhasilan karya kami.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            <!-- Testimonial 1 -->
-            <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
-                <div>
-                    <div class="text-amber-400 flex space-x-1 mb-4">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-slate-700 text-sm italic mb-6 leading-relaxed">
-                        "Pengerjaan interior kantor kami sangat rapi dan selesai tepat waktu. Tim Kareka Global Solutiion sangat komunikatif dan solutif memberikan saran desain."
-                    </p>
+    <!-- Footer -->
+    <footer class="bg-kareka-950 text-white pt-16 pb-12 border-t border-emerald-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-12 grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <img src="Gemini_Generated_Image_6a0uys6a0uys6a0u.jpeg" alt="Logo Footer" class="h-10 w-auto object-contain bg-white p-1 rounded-lg">
                 </div>
-                <div class="flex items-center gap-4 pt-4 border-t border-slate-100">
-                    <div class="w-12 h-12 bg-kareka-700 text-white rounded-full flex items-center justify-center font-bold text-base shadow">
-                        BS
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 text-sm">Bpk. Budi Santoso</h4>
-                        <p class="text-xs text-slate-500">Direktur Utama PT Maju Jaya</p>
-                    </div>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Kareka Global Solutiion adalah mitra profesional terpercaya untuk solusi total desain interior dan periklanan berkualitas tinggi di Indonesia.
+                </p>
+                <div class="flex space-x-3 pt-2">
+                    <a href="#" class="w-8 h-8 rounded-full bg-emerald-900/60 hover:bg-emerald-700 flex items-center justify-center text-emerald-300 hover:text-white transition"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-emerald-900/60 hover:bg-emerald-700 flex items-center justify-center text-emerald-300 hover:text-white transition"><i class="fa-brands fa-instagram text-xs"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-emerald-900/60 hover:bg-emerald-700 flex items-center justify-center text-emerald-300 hover:text-white transition"><i class="fa-brands fa-whatsapp text-xs"></i></a>
                 </div>
             </div>
 
-            <!-- Testimonial 2 -->
-            <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
-                <div>
-                    <div class="text-amber-400 flex space-x-1 mb-4">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-slate-700 text-sm italic mb-6 leading-relaxed">
-                        "Pesanan neon box dan huruf timbul untuk cabang toko baru kami hasilnya sangat terang dan berkelas. Pelanggan banyak yang memuji tampilannya!"
-                    </p>
-                </div>
-                <div class="flex items-center gap-4 pt-4 border-t border-slate-100">
-                    <div class="w-12 h-12 bg-kareka-700 text-white rounded-full flex items-center justify-center font-bold text-base shadow">
-                        SL
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 text-sm">Ibu Siska Lestari</h4>
-                        <p class="text-xs text-slate-500">Owner Cafe & Resto Komersial</p>
-                    </div>
-                </div>
+            <div>
+                <h4 class="font-bold text-sm text-emerald-400 uppercase tracking-wider mb-4">Navigasi Utama</h4>
+                <ul class="space-y-2 text-xs text-slate-300">
+                    <li><a href="#beranda" class="hover:text-emerald-400 transition">Beranda</a></li>
+                    <li><a href="#tentang" class="hover:text-emerald-400 transition">Tentang Kami</a></li>
+                    <li><a href="#layanan" class="hover:text-emerald-400 transition">Layanan & Keahlian</a></li>
+                    <li><a href="#portofolio" class="hover:text-emerald-400 transition">Portofolio Proyek</a></li>
+                    <li><a href="#kontak" class="hover:text-emerald-400 transition">Kontak & Lokasi</a></li>
+                </ul>
             </div>
 
-            <!-- Testimonial 3 -->
-            <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
-                <div>
-                    <div class="text-amber-400 flex space-x-1 mb-4">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-slate-700 text-sm italic mb-6 leading-relaxed">
-                        "Kitchen set rumah pribadi saya dikerjakan dengan sangat presisi. Material HPL berkualitas tinggi dan pengerjaannya bersih tanpa cela."
-                    </p>
-                </div>
-                <div class="flex items-center gap-4 pt-4 border-t border-slate-100">
-                    <div class="w-12 h-12 bg-kareka-700 text-white rounded-full flex items-center justify-center font-bold text-base shadow">
-                        RH
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 text-sm">Bpk. Rahmat Hidayat</h4>
-                        <p class="text-xs text-slate-500">Pemilik Hunian Eksklusif</p>
-                    </div>
-                </div>
+            <div>
+                <h4 class="font-bold text-sm text-emerald-400 uppercase tracking-wider mb-4">Layanan Spesialis</h4>
+                <ul class="space-y-2 text-xs text-slate-300">
+                    <li><a href="#layanan" class="hover:text-emerald-400 transition">Desain Interior & Build</a></li>
+                    <li><a href="#layanan" class="hover:text-emerald-400 transition">Kitchen Set Custom</a></li>
+                    <li><a href="#layanan" class="hover:text-emerald-400 transition">Billboard & Baliho Outdoor</a></li>
+                    <li><a href="#layanan" class="hover:text-emerald-400 transition">Neon Box & Letter Sign</a></li>
+                    <li><a href="#layanan" class="hover:text-emerald-400 transition">Car Wrapping / Branding</a></li>
+                </ul>
             </div>
 
-        </div>
-    </div>
-</section>
-
-<!-- Kontak & Lokasi Section -->
-<section id="kontak" class="py-24 max-w-7xl mx-auto px-4 sm:px-12">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        
-        <!-- Contact Info -->
-        <div data-aos="fade-right">
-            <span class="text-kareka-700 font-bold uppercase tracking-wider text-xs bg-emerald-100 px-3.5 py-1.5 rounded-full">Hubungi Kami</span>
-            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-4 mb-6">Mari Wujudkan Proyek Impian Anda Bersama Kami</h2>
-            <p class="text-slate-600 mb-8 leading-relaxed">
-                Punya pertanyaan atau ingin berkonsultasi mengenai rencana desain interior dan pembuatan media promosi? Tim ahli kami siap melayani Anda.
-            </p>
-
-            <div class="space-y-6">
-                <div class="flex items-start gap-4">
-                    <div class="bg-kareka-900 text-emerald-400 p-3.5 rounded-2xl shadow">
-                        <i class="fa-solid fa-location-dot text-xl"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900">Alamat Kantor & Workshop</h4>
-                        <p class="text-sm text-slate-600 mt-1">Jalan Pesantren No.108 RT/RW. 005/007, Kelurahan Cibabat, Kecamatan Cimahi Utara, Kota Cimahi, 40513</p>
-                    </div>
-                </div>
-
-                <div class="flex items-start gap-4">
-                    <div class="bg-kareka-900 text-emerald-400 p-3.5 rounded-2xl shadow">
-                        <i class="fa-solid fa-phone-volume text-xl"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900">WhatsApp</h4>
-                        <p class="text-sm text-slate-600 mt-1">+62 896-8423-1379</p>
-                    </div>
-                </div>
-
-                <div class="flex items-start gap-4">
-                    <div class="bg-kareka-900 text-emerald-400 p-3.5 rounded-2xl shadow">
-                        <i class="fa-solid fa-envelope-open-text text-xl"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900">Email Resmi</h4>
-                        <p class="text-sm text-slate-600 mt-1">karekaglobalsolutiion@gmail.com</p>
-                    </div>
-                </div>
-
-                <div class="flex items-start gap-4">
-                    <div class="bg-kareka-900 text-emerald-400 p-3.5 rounded-2xl shadow">
-                        <i class="fa-solid fa-clock text-xl"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900">Jam Operasional</h4>
-                        <p class="text-sm text-slate-600 mt-1">Senin - Sabtu: 08.00 - 17.00 WIB</p>
-                    </div>
-                </div>
+            <div>
+                <h4 class="font-bold text-sm text-emerald-400 uppercase tracking-wider mb-4">Jam Kerja</h4>
+                <p class="text-xs text-slate-300 mb-3">Tim kami siap melayani konsultasi dan pengerjaan pada hari:</p>
+                <p class="text-xs font-bold text-white bg-emerald-950 p-3.5 rounded-xl border border-emerald-800/40">
+                    Senin - Sabtu<br>08.00 - 17.00 WIB
+                </p>
             </div>
         </div>
 
-        <!-- Contact Form -->
-        <div class="bg-white p-8 sm:p-10 rounded-3xl shadow-xl border border-slate-200" data-aos="fade-left">
-            <h3 class="text-2xl font-black text-slate-900 mb-6">Kirim Pesan & Konsultasi</h3>
-            <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-5">
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Nama Lengkap</label>
-                    <input type="text" id="name" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4.5 py-3.5 text-sm focus:outline-none focus:border-kareka-600 transition" placeholder="Masukkan nama Anda">
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Nomor WhatsApp</label>
-                        <input type="tel" id="phone" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4.5 py-3.5 text-sm focus:outline-none focus:border-kareka-600 transition" placeholder="08xxxxxxxxxx">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Pilih Layanan</label>
-                        <select id="service" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4.5 py-3.5 text-sm focus:outline-none focus:border-kareka-600 transition">
-                            <option value="Interior">Desain & Pembuatan Interior</option>
-                            <option value="Advertising">Advertising & Branding</option>
-                            <option value="Keduanya">Interior & Advertising</option>
-                        </select>
-                    </div>
-                </div>
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Pesan / Detail Proyek</label>
-                    <textarea id="message" rows="4" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4.5 py-3.5 text-sm focus:outline-none focus:border-kareka-600 transition" placeholder="Jelaskan kebutuhan proyek atau ukuran ruangan Anda..."></textarea>
-                </div>
-                <button type="submit" class="w-full bg-kareka-700 hover:bg-kareka-800 text-white font-bold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    <span>Kirim Pesan Sekarang</span>
-                </button>
-            </form>
+        <div class="max-w-7xl mx-auto px-4 sm:px-12 pt-8 border-t border-emerald-900/40 text-center text-xs text-slate-500">
+            &copy; 2026 Kareka Global Solutiion. All Rights Reserved. Interior & Advertising Specialist.
         </div>
+    </footer>
 
-    </div>
-
-    <!-- Google Maps Lokasi Jalan Pesantren No.108 Cimahi Utara -->
-    <div class="mt-16 rounded-3xl overflow-hidden shadow-xl border border-slate-200 h-96 relative" data-aos="fade-up">
-        <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.015792949704!2d107.5451!3d-6.8839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e424268e0e75%3A0x6fb878b277b5f543!2sJl.%20Pesantren%20No.108%2C%20Cibabat%2C%20Kec.%20Cimahi%20Utara%2C%20Kota%20Cimahi%2C%20Jawa%20Barat%2040513!5e0!3m2!1sid!2sid!4v1650000000000!5m2!1sid!2sid" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-kareka-950 text-white pt-16 pb-12 border-t border-emerald-900/50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-12 grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-        <div class="space-y-4">
-            <div class="flex items-center gap-3">
-                <img src="Gemini_Generated_Image_6a0uys6a0uys6a0u.jpeg" alt="Logo Footer" class="h-10 w-auto object-contain bg-white p-1 rounded-lg">
-            </div>
-            <p class="text-slate-400 text-xs leading-relaxed">
-                Kareka Global Solutiion adalah mitra profesional terpercaya untuk solusi total desain interior dan periklanan berkualitas tinggi di Indonesia.
-            </p>
-            <div class="flex space-x-3 pt-2">
-                <a href="#" class="w-8 h-8 rounded-full bg-emerald-900/60 hover:bg-emerald-700 flex items-center justify-center text-emerald-300 hover:text-white transition"><i class="fa-brands fa-facebook-f text-xs"></i></a>
-                <a href="#" class="w-8 h-8 rounded-full bg-emerald-900/60 hover:bg-emerald-700 flex items-center justify-center text-emerald-300 hover:text-white transition"><i class="fa-brands fa-instagram text-xs"></i></a>
-                <a href="#" class="w-8 h-8 rounded-full bg-emerald-900/60 hover:bg-emerald-700 flex items-center justify-center text-emerald-300 hover:text-white transition"><i class="fa-brands fa-whatsapp text-xs"></i></a>
-            </div>
-        </div>
-
-        <div>
-            <h4 class="font-bold text-sm text-emerald-400 uppercase tracking-wider mb-4">Navigasi Utama</h4>
-            <ul class="space-y-2 text-xs text-slate-300">
-                <li><a href="#beranda" class="hover:text-emerald-400 transition">Beranda</a></li>
-                <li><a href="#tentang" class="hover:text-emerald-400 transition">Tentang Kami</a></li>
-                <li><a href="#layanan" class="hover:text-emerald-400 transition">Layanan & Keahlian</a></li>
-                <li><a href="#portofolio" class="hover:text-emerald-400 transition">Portofolio Proyek</a></li>
-                <li><a href="#kontak" class="hover:text-emerald-400 transition">Kontak & Lokasi</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h4 class="font-bold text-sm text-emerald-400 uppercase tracking-wider mb-4">Layanan Spesialis</h4>
-            <ul class="space-y-2 text-xs text-slate-300">
-                <li><a href="#layanan" class="hover:text-emerald-400 transition">Desain Interior & Build</a></li>
-                <li><a href="#layanan" class="hover:text-emerald-400 transition">Kitchen Set Custom</a></li>
-                <li><a href="#layanan" class="hover:text-emerald-400 transition">Billboard & Baliho Outdoor</a></li>
-                <li><a href="#layanan" class="hover:text-emerald-400 transition">Neon Box & Letter Sign</a></li>
-                <li><a href="#layanan" class="hover:text-emerald-400 transition">Car Wrapping / Branding</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h4 class="font-bold text-sm text-emerald-400 uppercase tracking-wider mb-4">Jam Kerja</h4>
-            <p class="text-xs text-slate-300 mb-3">Tim kami siap melayani konsultasi dan pengerjaan pada hari:</p>
-            <p class="text-xs font-bold text-white bg-emerald-950 p-3.5 rounded-xl border border-emerald-800/40">
-                Senin - Sabtu<br>08.00 - 17.00 WIB
-            </p>
-        </div>
-    </div>
-
-    <div class="max-w-7xl mx-auto px-4 sm:px-12 pt-8 border-t border-emerald-900/40 text-center text-xs text-slate-500">
-        &copy; 2026 Kareka Global Solutiion. All Rights Reserved. Interior & Advertising Specialist.
-    </div>
-</footer>
-
-<!-- AOS Animation Script -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init({
-        duration: 800,
-        once: true,
-    });
-
-    // Mobile Menu Toggle Logic
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileLinks = document.querySelectorAll('.mobile-link');
-
-    menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
-
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
         });
-    });
 
-    // Interactive Estimate Calculator
-    function calculateEstimate() {
-        const cat = document.getElementById('est-category').value;
-        const vol = parseFloat(document.getElementById('est-volume').value) || 10;
-        const resEl = document.getElementById('est-result');
+        // Mobile Menu Toggle Logic
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
 
-        let baseMin = cat === 'interior' ? 2500000 : 1500000;
-        let baseMax = cat === 'interior' ? 4500000 : 3000000;
-
-        let totalMin = baseMin * vol;
-        let totalMax = baseMax * vol;
-
-        const formatRp = (num) => {
-            return 'Rp ' + num.toLocaleString('id-ID');
-        };
-
-        resEl.innerText = `${formatRp(totalMin)} - ${formatRp(totalMax)}`;
-    }
-
-    // Portfolio Interactive Filter
-    function filterPortfolio(category) {
-        const items = document.querySelectorAll('.portfolio-item');
-        const buttons = document.querySelectorAll('.portfolio-filter-btn');
-
-        buttons.forEach(btn => {
-            btn.classList.remove('bg-kareka-700', 'text-white', 'shadow-md');
-            btn.classList.add('bg-slate-200', 'text-slate-700');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
         });
-        event.target.classList.remove('bg-slate-200', 'text-slate-700');
-        event.target.classList.add('bg-kareka-700', 'text-white', 'shadow-md');
 
-        items.forEach(item => {
-            if (category === 'all' || item.classList.contains(category)) {
-                item.style.display = 'block';
-            } else {
-                item.style.display = 'none';
-            }
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
         });
-    }
 
-    // Contact Form Submission Simulation
-    function handleFormSubmit(e) {
-        e.preventDefault();
-        const name = document.getElementById('name').value;
-        const service = document.getElementById('service').value;
+        // Interactive Estimate Calculator
+        function calculateEstimate() {
+            const cat = document.getElementById('est-category').value;
+            const vol = parseFloat(document.getElementById('est-volume').value) || 10;
+            const resEl = document.getElementById('est-result');
 
-        const toast = document.getElementById('toast');
-        const toastMsg = document.getElementById('toast-message');
-        toastMsg.innerText = `Terima kasih ${name}, konsultasi untuk layanan ${service} berhasil dikirim!`;
+            let baseMin = cat === 'interior' ? 2500000 : 1500000;
+            let baseMax = cat === 'interior' ? 4500000 : 3000000;
 
-        toast.classList.remove('translate-y-32', 'opacity-0');
-        setTimeout(() => {
-            toast.classList.add('translate-y-32', 'opacity-0');
-        }, 4500);
+            let totalMin = baseMin * vol;
+            let totalMax = baseMax * vol;
 
-        document.getElementById('contact-form').reset();
-    }
-</script>
+            const formatRp = (num) => {
+                return 'Rp ' + num.toLocaleString('id-ID');
+            };
+
+            resEl.innerText = `${formatRp(totalMin)} - ${formatRp(totalMax)}`;
+        }
+
+        // Portfolio Interactive Filter
+        function filterPortfolio(category) {
+            const items = document.querySelectorAll('.portfolio-item');
+            const buttons = document.querySelectorAll('.portfolio-filter-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-kareka-700', 'text-white', 'shadow-md');
+                btn.classList.add('bg-slate-200', 'text-slate-700');
+            });
+            event.target.classList.remove('bg-slate-200', 'text-slate-700');
+            event.target.classList.add('bg-kareka-700', 'text-white', 'shadow-md');
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Contact Form Submission Simulation
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const service = document.getElementById('service').value;
+
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toast-message');
+            toastMsg.innerText = `Terima kasih ${name}, konsultasi untuk layanan ${service} berhasil dikirim!`;
+
+            toast.classList.remove('translate-y-32', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-32', 'opacity-0');
+            }, 4500);
+
+            document.getElementById('contact-form').reset();
+        }
+    </script>
 </body>
 </html>
