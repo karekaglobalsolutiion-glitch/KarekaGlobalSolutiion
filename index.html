@@ -55,6 +55,27 @@
         </div>
     </div>
 
+    <!-- Image Lightbox Modal -->
+    <div id="image-modal" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md hidden flex items-center justify-center p-4 sm:p-8">
+        <div class="relative max-w-4xl w-full bg-white rounded-3xl overflow-hidden shadow-2xl border border-slate-700 flex flex-col max-h-[90vh]">
+            <div class="p-4 bg-kareka-950 text-white flex justify-between items-center border-b border-emerald-900">
+                <div>
+                    <h3 id="modal-title" class="font-bold text-base sm:text-lg text-emerald-400">Detail Portofolio</h3>
+                    <p id="modal-desc" class="text-xs text-slate-300">Kareka Global Solutiion</p>
+                </div>
+                <button onclick="closeModal()" class="w-10 h-10 rounded-full bg-emerald-900/60 hover:bg-emerald-800 text-white flex items-center justify-center transition focus:outline-none">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            <div class="p-4 sm:p-6 bg-slate-900 flex items-center justify-center overflow-auto flex-1">
+                <img id="modal-img" src="" alt="Zoomed Portfolio" class="max-h-[65vh] w-auto object-contain rounded-xl shadow-lg">
+            </div>
+            <div class="p-4 bg-slate-950 text-center text-xs text-slate-400 border-t border-emerald-900/40">
+                Tekan tombol 'X' di pojok kanan atas atau klik area luar untuk menutup.
+            </div>
+        </div>
+    </div>
+
     <!-- Top Announcement / Contact Bar -->
     <div class="bg-kareka-950 text-slate-300 text-xs py-2.5 px-4 sm:px-12 border-b border-emerald-900/40">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
@@ -190,8 +211,8 @@
     <section id="tentang" class="py-24 max-w-7xl mx-auto px-4 sm:px-12">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div class="lg:col-span-6 relative" data-aos="fade-right">
-                <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Tentang Kareka" class="w-full h-auto object-cover">
+                <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80', 'Tentang Kareka', 'Solusi Terpadu Ruang & Media Iklan Profesional')">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Tentang Kareka" class="w-full h-auto object-cover hover:scale-105 transition duration-500">
                 </div>
                 <div class="absolute -bottom-6 -right-6 bg-kareka-900 text-white p-6 rounded-3xl shadow-xl hidden sm:block border border-emerald-700/40">
                     <p class="text-3xl font-black text-emerald-400">100%</p>
@@ -305,7 +326,7 @@
         <div class="text-center max-w-2xl mx-auto mb-12" data-aos="fade-up">
             <span class="text-kareka-700 font-bold uppercase tracking-wider text-xs bg-emerald-100 px-3.5 py-1.5 rounded-full">Galeri Karya</span>
             <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-4 mb-4">Portofolio Proyek Unggulan</h2>
-            <p class="text-slate-600">Bukti nyata dedikasi dan kualitas kerja kami dalam bidang interior dan periklanan.</p>
+            <p class="text-slate-600">Klik pada foto mana pun untuk memperbesar tampilan gambar.</p>
         </div>
 
         <!-- Filter Buttons -->
@@ -318,7 +339,7 @@
         <!-- Portfolio Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-container">
             
-             <!-- Item 1 -->
+            <!-- Item 1 -->
             <div class="portfolio-item interior group relative rounded-2xl overflow-hidden shadow-lg bg-white border border-slate-100 cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80', 'Kantor Eksekutif', 'Desain Interior - Renovasi tata ruang & partisi kaca minimalis modern.')" data-aos="zoom-in">
                 <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80" alt="Interior Kantor Modern" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
@@ -790,6 +811,34 @@
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
+        });
+
+        // Image Lightbox Modal Functions
+        function openModal(imgSrc, title, desc) {
+            const modal = document.getElementById('image-modal');
+            const modalImg = document.getElementById('modal-img');
+            const modalTitle = document.getElementById('modal-title');
+            const modalDesc = document.getElementById('modal-desc');
+
+            modalImg.src = imgSrc;
+            modalTitle.innerText = title;
+            modalDesc.innerText = desc;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling background
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('image-modal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Restore background scrolling
+        }
+
+        // Close modal when clicking outside the content box
+        window.addEventListener('click', (e) => {
+            const modal = document.getElementById('image-modal');
+            if (e.target === modal) {
+                closeModal();
+            }
         });
 
         // Interactive Estimate Calculator
